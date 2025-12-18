@@ -1,0 +1,6 @@
+[submodule "IsaacLab"]
+	path = IsaacLab
+	url = https://github.com/isaac-sim/IsaacLab.git
+[submodule "MasterRacing"]
+	path = MasterRacing
+	url = https://github.com/WarriorHanamy/MasterRacing.git
