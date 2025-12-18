@@ -94,7 +94,11 @@ VOLUME [ \
 ]
 
 
-RUN apt install just
+RUN apt install just && \
+    echo "alias j='just'" >> ${DOCKER_USER_HOME}/.bashrc
+
+
+RUN ${ISAACLAB_PATH}/isaaclab.sh -p -m pip install manifold3d
 
 ENTRYPOINT ["/bin/bash"]
 

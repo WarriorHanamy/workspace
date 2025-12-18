@@ -20,7 +20,8 @@ run-sim:
     -v ~/docker/isaac-sim5.1/logs:/root/.nvidia-omniverse/logs:rw \
     -v ~/docker/isaac-sim5.1/data:/root/.local/share/ov/data:rw \
     -v ~/docker/isaac-sim5.1/documents:/root/Documents:rw \
-    -v ${HOME}/workspace/MasterRacing/:/workspace/MasterRacing/ \
+    -v ${HOME}/workspace/.git:/workspace/.git \
+    -v ${HOME}/workspace/MasterRacing:/workspace/MasterRacing \
     lab2.3-sim5.1:v0
 
 exec-sim:
@@ -52,6 +53,7 @@ dr:
     -v ~/docker/isaac-sim4.5/logs:/root/.nvidia-omniverse/logs:rw \
     -v ~/docker/isaac-sim4.5/data:/root/.local/share/ov/data:rw \
     -v ~/docker/isaac-sim4.5/documents:/root/Documents:rw \
+    -v ${HOME}/workspace/.git:/workspace/.git \
     -v ${HOME}/workspace/MasterRacing:/workspace/MasterRacing \
     daibo:v0
 
