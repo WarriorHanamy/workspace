@@ -80,6 +80,9 @@ run-isaac-sim-solo:
 exec-isaac-sim-solo:
     docker exec -it isaac-sim /bin/bash
 
+start:
+    docker restart lab2.3-sim5.1:v0
+
 alias rd := run-sim
 alias b := build-sim
 alias e := exec-sim
